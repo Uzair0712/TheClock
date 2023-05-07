@@ -3,7 +3,7 @@ const second = document.querySelector(".second");
 const minute = document.querySelector(".minute");
 
 // setting timer for the rotation of the clock hands
-function rotation() {
+function rotationOfHand() {
   const day = new Date();
   console.log(day.getMinutes());
   const minutes = day.getMinutes();
@@ -17,5 +17,5 @@ function rotation() {
   //   Rotating the hour hand
   hour.style.transform = `rotate(${hours * 30 + minutes * 0.5 + 180}deg)`;
 }
-rotation();
-setInterval(rotation, 1000);
+rotationOfHand();
+setInterval(rotationOfHand, 1000);
